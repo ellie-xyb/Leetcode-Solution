@@ -10,7 +10,7 @@ Given n, calculate F(n).
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ## 1-@Element79  (feel this way is so clever!)
-```
+```python3
 class Solution:
     @lru_cache(None)
     def fib(self, n: int) -> int:
@@ -18,7 +18,7 @@ class Solution:
 ```
 
 ## 2- Me
-```
+```python3
 class Solution:
     def fib(self, n: int) -> int:
         if n==0:
@@ -40,7 +40,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ## (me)         
-```
+```python3
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -68,7 +68,7 @@ class Solution:
 
         sum = num1 + num2
         def newNextNode(num):
-                    if num//10 >= 1:
+                    if num >= 10:
                         new_num = num//10
                         Next = ListNode(num%10, newNextNode( new_num))
                     else:
